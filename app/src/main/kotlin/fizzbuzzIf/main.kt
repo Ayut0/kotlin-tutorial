@@ -1,6 +1,6 @@
-package fizzbuzz_if
+package fizzbuzz
 
-fun fizzbuzz(i:Int) : String {
+fun fizzbuzzIf(i:Int) : String {
     return if(i % 15 == 0){
         "FizzBuzz"
     } else if(i % 3 ==0){
@@ -14,6 +14,6 @@ fun fizzbuzz(i:Int) : String {
 
 fun main() {
     for(i in 1..100){
-        println(fizzbuzz(i))
+        println(fizzbuzzIf(i))
     }
 }
