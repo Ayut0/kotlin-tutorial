@@ -1,4 +1,4 @@
-package interface
+package button
 
 interface Clickable{
     fun click()

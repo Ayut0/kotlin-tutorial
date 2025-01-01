@@ -63,6 +63,11 @@ tasks.register<JavaExec>("runClassDemo") {
     mainClass.set("classDemo.MainKt")
 }
 
+tasks.register<JavaExec>("runColorGenerator") {
+    classpath = sourceSets.main.get().runtimeClasspath
+    mainClass.set("colorgenerator.MainKt")
+}
+
 tasks.named<Test>("test") {
     // Use JUnit Platform for unit tests.
     useJUnitPlatform()

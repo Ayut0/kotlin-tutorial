@@ -1,3 +1,5 @@
+package objectdemo
+
 // Singleton object
 // Singleton object ensures that a class has only one instance and provides a global point of access to it.
 // Usage: Shared resources, Database connections, Logger, File system, etc.
