@@ -40,7 +40,17 @@ java {
 
 application {
     // Define the main class for the application.
-    mainClass = "fizzbuzz_if.MainKt"
+    mainClass = "org.example.AppKt"
+}
+
+tasks.register<JavaExec>("runFizzBuzzIf"){
+    classpath = sourceSets.main.get().runtimeClasspath
+    mainClass.set("fizzbuzz_if.MainKt")
+}
+
+tasks.register<JavaExec>("collectionPractice"){
+    classpath = sourceSets.main.get().runtimeClasspath
+    mainClass.set("collection_practice.MainKt")
 }
 
 tasks.named<Test>("test") {
