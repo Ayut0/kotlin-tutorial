@@ -1,6 +1,6 @@
-package fizzbuzz_when
+package fizzbuzzWhen
 
-fun fizzbuzz(i:Int) :String {
+fun fizzbuzzWhen(i:Int) :String {
     return  when{
         i % 15 == 0 -> {
             "FizzBuzz"
@@ -19,6 +19,6 @@ fun fizzbuzz(i:Int) :String {
 
 fun main() {
     for(i in 1..100){
-        println(fizzbuzz(i))
+        println(fizzbuzzWhen(i))
     }
 }

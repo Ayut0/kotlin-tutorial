@@ -1,6 +1,6 @@
-package collection_practice
+package collections
 
-fun double_list():List<Int> {
+fun printDoubledList():List<Int> {
     val list = listOf(1,2,3)
     // list.forEach{ num -> println(num * 2)}
 
@@ -13,5 +13,5 @@ fun double_list():List<Int> {
 }
 
 fun main() {
-    double_list()
+    printDoubledList()
 }

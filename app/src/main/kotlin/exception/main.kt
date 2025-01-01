@@ -1,10 +1,9 @@
-package exception_handling
-
+package exception
 import java.lang.IllegalArgumentException
-import exception_handling.convertStrToInt
+import exception.convertStrToInt
 
 // Basic syntax for exception handling in Kotlin
-fun throwException(percentage:Int){
+fun throwPercentageException(percentage:Int){
     if(percentage !in 0..100){
         throw IllegalArgumentException("Percentage must be between 0 and 100: $percentage")
     }else {
@@ -27,12 +26,11 @@ fun convertStrToInt(str: String){
 
 fun main() {
     // try {
-    //     throwException(20)
+    //     throwPercentageException(20)
     // } catch (e: IllegalArgumentException) {
     //     println(e.message)
     // }finally {
     //     println("This is the finally block")
     // }
-    
     convertStrToInt("20")
 }

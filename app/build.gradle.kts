@@ -43,22 +43,22 @@ application {
     mainClass = "org.example.AppKt"
 }
 
-tasks.register<JavaExec>("runFizzBuzzIf"){
+tasks.register<JavaExec>("runFizzBuzz") {
     classpath = sourceSets.main.get().runtimeClasspath
-    mainClass.set("fizzbuzz_if.MainKt")
+    mainClass.set("fizzbuzz.MainKt")
 }
 
-tasks.register<JavaExec>("collectionPractice"){
+tasks.register<JavaExec>("runCollections") {
     classpath = sourceSets.main.get().runtimeClasspath
-    mainClass.set("collection_practice.MainKt")
+    mainClass.set("collections.MainKt")
 }
 
-tasks.register<JavaExec>("exceptionHandling"){
+tasks.register<JavaExec>("runException") {
     classpath = sourceSets.main.get().runtimeClasspath
-    mainClass.set("exception_handling.MainKt")
+    mainClass.set("exception.MainKt")
 }
 
-tasks.register<JavaExec>("classDemo"){
+tasks.register<JavaExec>("runClassDemo") {
     classpath = sourceSets.main.get().runtimeClasspath
     mainClass.set("classDemo.MainKt")
 }
