@@ -53,6 +53,11 @@ tasks.register<JavaExec>("collectionPractice"){
     mainClass.set("collection_practice.MainKt")
 }
 
+tasks.register<JavaExec>("exceptionHandling"){
+    classpath = sourceSets.main.get().runtimeClasspath
+    mainClass.set("exception_handling.MainKt")
+}
+
 tasks.named<Test>("test") {
     // Use JUnit Platform for unit tests.
     useJUnitPlatform()
