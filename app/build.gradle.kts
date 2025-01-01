@@ -58,6 +58,11 @@ tasks.register<JavaExec>("exceptionHandling"){
     mainClass.set("exception_handling.MainKt")
 }
 
+tasks.register<JavaExec>("classDemo"){
+    classpath = sourceSets.main.get().runtimeClasspath
+    mainClass.set("classDemo.MainKt")
+}
+
 tasks.named<Test>("test") {
     // Use JUnit Platform for unit tests.
     useJUnitPlatform()
