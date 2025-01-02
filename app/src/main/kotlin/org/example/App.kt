@@ -4,12 +4,11 @@
 package org.example
 
 class App {
-    val greeting: String
-        get() {
-            return "Hello World!"
-        }
+    fun sum(a: Int, b:Int) : Int{
+        return a + b
+    }
 }
 
 fun main() {
-    println(App().greeting)
+    println("Hello World")
 }

@@ -13,6 +13,9 @@ plugins {
     application
 }
 
+group = "org.example"
+version = "1.0-SNAPSHOT"
+
 repositories {
     // Use Maven Central for resolving dependencies.
     mavenCentral()
@@ -24,6 +27,8 @@ dependencies {
 
     // Use the JUnit 5 integration.
     testImplementation(libs.junit.jupiter.engine)
+
+    testImplementation(kotlin("test"))
 
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 
@@ -41,6 +46,10 @@ java {
 application {
     // Define the main class for the application.
     mainClass = "org.example.AppKt"
+}
+
+tasks.test{
+    useJUnitPlatform()
 }
 
 tasks.register<JavaExec>("runFizzBuzz") {

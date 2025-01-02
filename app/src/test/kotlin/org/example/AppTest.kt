@@ -4,11 +4,14 @@
 package org.example
 
 import kotlin.test.Test
-import kotlin.test.assertNotNull
+import kotlin.test.assertEquals
 
 class AppTest {
+
+    private val testSample : App = App()
     @Test fun appHasAGreeting() {
-        val classUnderTest = App()
-        assertNotNull(classUnderTest.greeting, "app should have a greeting")
+       val expected = 43
+        assertEquals(expected, testSample.sum(42,1))
+
     }
 }
